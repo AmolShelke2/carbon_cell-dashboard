@@ -83,7 +83,7 @@ const Sidebar = () => {
             <ul className="flex flex-col gap-2 my-8">
               {menu.map((menu) => (
                 <div
-                  className={`flex items-center justify-between text-[#ccc] py-2 px-4 text-[1rem] pl-5 duration-200 cursor-pointer`}
+                  className={`flex items-center justify-between text-[#ccc] py-2 px-4 text-[1rem] pl-2 duration-200 cursor-pointer`}
                   onClick={() => setCurrentMenu(menu.link)}>
                   <p
                     className={`flex items-center gap-2.5 text-lg capitalize ${

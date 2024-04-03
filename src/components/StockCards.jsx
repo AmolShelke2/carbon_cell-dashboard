@@ -33,7 +33,7 @@ const StockCards = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-start sm:justify-start items-center gap-4">
+      <div className="flex flex-wrap justify-start sm:justify-start items-center gap-4 my-2">
         {priceData &&
           priceData.bpi &&
           Object.keys(priceData.bpi).map((currency) => (

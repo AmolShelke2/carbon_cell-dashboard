@@ -71,7 +71,7 @@ const Sidebar = () => {
         <div
           className={`sidebar-overlay z-20 ${isSidebarOpen ? "active" : ""}`}>
           <div className="custom-scrollbar py-6 w-[16rem] overflow-y-auto h-full md:h-[95%]  bg-gradient-to-tr from-[#22222f] from-30% to-[#4E3245]">
-            <div className="logo">
+            <div className="logo px-2">
               <img
                 src={logo}
                 alt="carbon-cell"
@@ -80,7 +80,7 @@ const Sidebar = () => {
                 className="object-contain"
               />
             </div>
-            <ul className="flex flex-col gap-2 my-8">
+            <ul className="flex flex-col gap-2 my-8 px-2">
               {menu.map((menu) => (
                 <div
                   className={`flex items-center justify-between text-[#ccc] py-2 px-4 text-[1rem] pl-2 duration-200 cursor-pointer`}

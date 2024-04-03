@@ -33,17 +33,17 @@ const StockCards = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-start items-center gap-4">
+      <div className="flex flex-wrap justify-start sm:justify-start items-center gap-4">
         {priceData &&
           priceData.bpi &&
           Object.keys(priceData.bpi).map((currency) => (
             <div
               key={currency}
-              className="bg-[#22222f] shadow-lg p-4 rounded-lg h-[200px] w-[200px]">
-              <h2 className="text-lg text-left font-bold mb-2 text-[#ccc]">
+              className="bg-[#22222f] shadow-lg p-4 rounded-lg h-[150px] sm:h-[200px] sm:w-[200px] text-center sm:text-left w-full">
+              <h2 className="text-lg text-center sm:text-left font-bold mb-2 text-[#ccc]">
                 {currency}
               </h2>
-              <p className="text-lg text-gray-200 mb-2 font-light">
+              <p className="text-lg text-gray-200 mb-4 font-light">
                 {priceData.bpi[currency].rate}
               </p>
               <p className="text-sm text-gray-400">{priceData.time.updated}</p>
